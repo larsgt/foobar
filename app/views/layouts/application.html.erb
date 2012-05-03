@@ -25,7 +25,7 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
@@ -33,7 +33,6 @@
   </head>
 
   <body>
-<%= yield %>
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -43,23 +42,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="http://twitter.github.com/bootstrap/examples/fluid.html#">Health Space</a>
+          <a class="brand" href="#">Health Space</a>
           <div class="btn-group pull-right">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="http://twitter.github.com/bootstrap/examples/fluid.html#">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
               <i class="icon-user"></i> Username
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Profile</a></li>
+              <li><a href="#">Profile</a></li>
               <li class="divider"></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Sign Out</a></li>
+              <li><a href="#">Sign Out</a></li>
             </ul>
           </div>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Home</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#about">About</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#contact">Contact</a></li>
+              <li class="active"><%= link_to 'Home', root_url %></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -71,28 +70,27 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li class="active"><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Link</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Perscriptions</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Link</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Link</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Link</a></li>
+              <li class="nav-header">About you</li>
+              <li><%= link_to 'Your prescriptions', your_prescriptions_url %></li>
+              <li><%= link_to 'Your training', your_training_url %></li>
+              <li><%= link_to 'Your genome', your_genome_url %></li>
+              <li class="nav-header">Discussions</li>
+              <li><%= link_to 'Forum', forum_posts_url %></li>
               <li class="nav-header">About</li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Link</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Link</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Link</a></li>
+              <li><a href="http://www.innovativemedicine.ca/about">About Personalized Genomics</a></li>
+              <li><a href="http://www.mountsinai.on.ca/about_us">About MSH</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
-         <h2>Updates</h2>
+				<%= yield %>
         </div><!--/span-->
      </div><!--/row-->
 
       <hr>
 
       <footer>
-        <p>© Company 2012</p>
+        <p>© innovativemedicine.ca 2012</p>
       </footer>
 
     </div><!--/.fluid-container-->
@@ -100,6 +98,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <!--
     <script src="./Bootstrap, from Twitter_files/jquery.js"></script>
     <script src="./Bootstrap, from Twitter_files/bootstrap-transition.js"></script>
     <script src="./Bootstrap, from Twitter_files/bootstrap-alert.js"></script>
@@ -114,6 +113,7 @@
     <script src="./Bootstrap, from Twitter_files/bootstrap-carousel.js"></script>
     <script src="./Bootstrap, from Twitter_files/bootstrap-typeahead.js"></script>
 
+   -->
   
 
 </body></html>

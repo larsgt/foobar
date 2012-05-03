@@ -1,0 +1,2 @@
+module Personal::GenomeHelper
+end
